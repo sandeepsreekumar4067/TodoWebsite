@@ -14,12 +14,15 @@
     justify-content: center;
     height: 100%;
     width: 100%;
+    transition: 0.2s;
 }
 .task:hover{
     box-shadow: 0 5px 10px black;
     scale: 1.008;
 }
-
+.taskName.crossed{
+    text-decoration: line-through;
+}
 .deleteBtn button{
     background-color: #B7C9F2;
     font-size: 15px;

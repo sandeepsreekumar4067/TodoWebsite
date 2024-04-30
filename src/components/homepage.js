@@ -21,8 +21,7 @@ const Home = () => {
         setTaskArray(newArray)
     }
     useEffect(()=>{
-        console.log(taskArray);
-    },[taskArray,TaskList])
+    },)
     return ( 
         <div className="homePage">
             <div className="taskContainer">

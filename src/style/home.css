@@ -55,6 +55,10 @@ body{
     padding: 10px;
     border-radius: 20px;
     border: none;
+    transition: 0.3s;
+}
+.inputButton input:active{
+    scale: 0.9;
 }
 .seperator{
     width: 889px;
