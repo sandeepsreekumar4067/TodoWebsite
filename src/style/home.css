@@ -24,10 +24,20 @@ body{
 .taskInput{
     padding: 10px;
 }
-input{
+.taskInput input{
     padding: 15px;
     width: 800px;
     height: 15px;
+    border-radius: 20px;
+    border: none;
+}
+.inputButton{
+    padding: 20px;
+}
+.inputButton input{
+    width: 140px;
+    height: 40px;
+    padding: 10px;
     border-radius: 20px;
     border: none;
 }

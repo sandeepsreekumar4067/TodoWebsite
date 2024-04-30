@@ -8,7 +8,9 @@ const Home = () => {
                 <div className="taskInput">
                     <input type="text" placeholder='Enter the Task here' />
                 </div>
-                
+                <div className="inputButton">
+                    <input type="button" value="Add Task"/>
+                </div>
             </div>
         </div>
      );
