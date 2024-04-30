@@ -3,16 +3,22 @@ import '../style/home.css'
 import TaskList from './taskList';
 
 const Home = () => {
+   const [i,seti]=useState(0)
     const [task,setTask] = useState('')
-    const [taskArray,setTaskArray] = useState([])
+    const [taskArray,setTaskArray] = useState([[]])
     const handleChange = (event)=>{
         setTask(event.target.value)
     }
     const addTask = ()=>{
         if(task.length!=0){
-            setTaskArray([...taskArray, task])
+            seti(i+1)
+            setTaskArray([...taskArray,[task,i]])
             setTask('')
         }
+    }
+    const deleteFunction = (id)=>{
+        const newArray = taskArray.filter(task => task[1]!==id)
+        setTaskArray(newArray)
     }
     useEffect(()=>{
         console.log(taskArray);
@@ -33,7 +39,7 @@ const Home = () => {
                 </div>
                 <div className='seperator'></div>
                 <div className="taskList">
-                <TaskList taskArray={taskArray}/>
+                <TaskList taskArray={taskArray} deleteFunction={deleteFunction}/>
                 </div>
             </div>
         </div>
