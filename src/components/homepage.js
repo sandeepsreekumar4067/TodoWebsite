@@ -5,6 +5,10 @@ const Home = () => {
         <div className="homePage">
             <div className="taskContainer">
                 <div className="title">TodoWebsite</div>
+                <div className="taskInput">
+                    <input type="text" placeholder='Enter the Task here' />
+                </div>
+                
             </div>
         </div>
      );

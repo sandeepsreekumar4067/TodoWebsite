@@ -7,15 +7,27 @@ body{
     overflow: hidden;
 }
 .taskContainer{
+    flex-direction: column;
     height: 600px;
     width: 900px;
     background-color: #DAC0A3;
     border-radius: 20px;
     box-shadow: 0 0 20px black;
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
 .title{
     font-size: 40px;
     padding: 18px;
+    color: #481E14;
+}
+.taskInput{
+    padding: 10px;
+}
+input{
+    padding: 15px;
+    width: 800px;
+    height: 15px;
+    border-radius: 20px;
+    border: none;
 }
