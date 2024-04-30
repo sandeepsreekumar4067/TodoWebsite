@@ -1,5 +1,6 @@
 import { useState , useEffect } from 'react';
 import '../style/home.css'
+import TaskList from './taskList';
 
 const Home = () => {
     const [task,setTask] = useState('')
@@ -15,7 +16,7 @@ const Home = () => {
     }
     useEffect(()=>{
         console.log(taskArray);
-    },[taskArray])
+    },[taskArray,TaskList])
     return ( 
         <div className="homePage">
             <div className="taskContainer">
@@ -30,7 +31,10 @@ const Home = () => {
                         }
                     }/>
                 </div>
-
+                <div className='seperator'></div>
+                <div className="taskList">
+                <TaskList taskArray={taskArray}/>
+                </div>
             </div>
         </div>
      );

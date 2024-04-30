@@ -15,7 +15,22 @@ body{
     box-shadow: 0 0 20px black;
     display: flex;
     align-items: center;
+  
 }
+.taskList{
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 10px;
+}
+.taskList::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .taskList {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
 .title{
     font-size: 40px;
     padding: 18px;
@@ -40,4 +55,10 @@ body{
     padding: 10px;
     border-radius: 20px;
     border: none;
+}
+.seperator{
+    width: 889px;
+    background-color: white;
+    height: 1px;
+    margin: 20px;
 }
